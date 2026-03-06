@@ -1,0 +1,334 @@
+
+:root {
+    --accent-color: rgba(244, 59, 58, 1);
+    --additional-color: rgba(155, 154, 154, 1);
+    --title-font-family: "Neutral Face", sans-serif;
+    --text-font-family: "Manrope", sans-serif;
+    --text-color: rgba(20, 20, 20, 1);
+}
+
+body {
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-family: var(--title-font-family);
+    margin: 0;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+header {
+    margin-bottom: 40px;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 1664px;
+    margin: 0 auto;
+}
+
+.colored-text {
+    color: var(--accent-color);
+}
+
+.text-separator_dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.section-name {
+    font: 400 24px var(--text-font-family);
+    color: var(--additional-color);
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =================== company-title-section ============================= */
+
+.company-title__text-block {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 33px;
+}
+
+.company-title__text-block:first-child {
+    display: flex;
+    justify-content: end;
+}
+
+/* =================== about-us-section ============================= */
+
+.about-us-section {
+    display: flex;
+    height: 547px;
+    gap: 148px;
+    margin-bottom: 149px;
+}
+
+.about-us-section .section-name {
+    display: none;
+}
+
+.about-us-info {
+    width: 549px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 69px;
+}
+
+.about-us-info__text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about-us-info__text-block p {
+    font: 400 16px var(--text-font-family);
+}
+
+.about-us-stat {
+    display: flex;
+    gap: 175px;
+}
+
+.about-us-stat__block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: max-content;
+    padding-left: 8px;
+    padding-bottom: 18px;
+    border-left: 1px solid #000;
+}
+
+.about-us-stat__block__stat-number {
+    font: 400 80px var(--title-font-family);
+}
+
+.about-us-number-animation1 {
+    transition: padding-top .5s ease-in;
+    padding-top: 41px;
+}
+
+.about-us-number-animation2 {
+    transition: padding-top .5s ease-in;
+    padding-top: 318px;
+}
+
+.about-us-number-animation3 {
+    transition: padding-top .5s ease-in;
+    padding-top: 222px;
+}
+
+.about-us-number-animation4 {
+    transition: padding-top .5s ease-in;
+    padding-top: 419px;
+}
+
+.stat-number__label {
+    font: 400 16px var(--text-font-family);
+}
+
+/* =================== review-section ============================= */
+
+.review-section {
+    display: flex;
+    height: 522px;
+    gap: 464px;
+    margin-bottom: 177px;
+}
+
+.review-section__slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.review-section__slider-buttons {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.review-section__slider-buttons button {
+    background-color: inherit;
+    border: none;
+    padding: 0;
+}
+
+.review-section__slider__slides {
+    font: 400 64px var(--title-font-family);
+}
+
+@keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.review-section__slider__slide {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.review-section__slider__slide-text {
+    display: flex;
+    gap: 10px;
+}
+
+.review-section__slider__slide-main-text {
+    width: 826px;
+}
+
+.review-section__slider__slide__text-author {
+    display: flex;
+    width: 270px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.review-section__slider__slide__text-author svg {
+    margin-bottom: 16px;
+}
+
+.review-section__slider__slide__text-author p,
+.review-section__slider__slide__text-author span {
+    font: 400 16px var(--text-font-family);
+}
+
+.review-section__slider__slide__text-author p {
+    color: var(--additional-color);
+} 
+
+.review-section__slider-link {
+    font: 400 16px var(--text-font-family);
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    transition: color .3s ease;
+} 
+
+
+.review-section__slider-link:hover {
+    color: var(--accent-color);
+}
+
+/* =================== menu-section ============================= */
+
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin-bottom: 150px;
+}
+/**/
+.menu-section__block {
+    position: relative;
+    display: flex;
+    gap: 288px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 64px;
+    /* overflow: hidden; */
+}
+
+.menu-section__block__hover-image {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    pointer-events: none; 
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu-section__block:hover .menu-section__block__hover-image,
+.menu-section__block:hover .menu-section__block__hover-image {
+    opacity: 1;
+    z-index: 100;
+} 
+/**/
+
+.menu-section__block-info {
+    display: flex;
+    flex-direction: column;
+    width: 548px;
+    gap: 16px;
+}
+
+.menu-section__block-info__title {
+    position: relative;
+    display: flex;
+    width: max-content;
+}
+
+.menu-section__block-info__title h2 {
+    cursor: pointer;
+    font: 400 80px var(--title-font-family);
+}
+
+.menu-section__block-info__link-icon {
+    position: absolute;
+    top: 9%;
+    right: -50px;
+}
+
+.menu-section__block-info p {
+    font: 400 16px var(--text-font-family);
+}
+
+.menu-section__block__list {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 161px;
+}
+
+.menu-section__block__list-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.menu-section__block__list-item h6 {
+    font: 400 24px var(--text-font-family);
+}
+
+.menu-section__block__list-item-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-section__block__list-item-info span {
+    font: 400 16px var(--text-font-family);
+    color: rgba(89, 89, 89, 1);
+}
+
