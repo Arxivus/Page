@@ -2,13 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
     showHiddenSections()
 
     setTimeout(() => {
-        const statBlocks = document.querySelectorAll('.about-us-stat__block');
+        const statBlocks = document.querySelectorAll('.about-us-section__stat-block');
 
         function animateBlock(index) {
             if (index >= statBlocks.length) return;
 
             const statBlock = statBlocks[index];
-            const numberEl = statBlock.querySelector('.about-us-stat__block__stat-number');
+            const numberEl = statBlock.querySelector('.about-us-section__stat-number');
             const endValue = Number(numberEl.getAttribute('value'));
 
             statBlock.classList.add(`about-us-number-animation${index + 1}`);
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const blocks = document.querySelectorAll('.menu-section__block');
     blocks.forEach(block => {
-        const img = block.querySelector('.menu-section__block__hover-image');
+        const img = block.querySelector('.menu-section__hover-image');
 
         block.addEventListener('mousemove', (e) => {
             const rect = block.getBoundingClientRect();

@@ -9,7 +9,7 @@
         width: 328px;
     }
 
-    .company-title__text-block svg {
+    .title-section__text-block svg {
         width: 140px;
         height: 30px;
     }
@@ -22,11 +22,11 @@
         font-size: 14px;
     }
 
-    .company-title__text-block {
+    .title-section__text-block {
         gap: 4px;
     }
 
-    .company-title__text:last-child {
+    .title-section__text:last-child {
         margin-left: auto;
     }
 
@@ -43,19 +43,19 @@
         display: block;
     }
 
-    .about-us-info {
+    .about-us-section__info {
         width: 100%;
         gap: 48px;
     }
 
-    .about-us-stat {
+    .about-us-section__stat {
         display: flex;
         flex-direction: column;
         gap: 24px;
         padding-left: 0;
     }
 
-    .about-us-stat__block {
+    .about-us-section__stat-block {
         flex-direction: row;
         align-items: center;
         gap: 8px;
@@ -65,7 +65,7 @@
         border-bottom: 1px solid #000;
     }
 
-    .about-us-stat__block__stat-number {
+    .about-us-section__stat-number {
         font: 400 32px var(--title-font-family);
     }
 
@@ -89,7 +89,7 @@
         padding-top: 0px;
     }
 
-    .about-us-info__text-block p {
+    .about-us-section__text-block p {
         width: 328px;
     }
 
@@ -102,24 +102,24 @@
         margin-bottom: 82px;
     }
     
-    .review-section__slider__slides {
+    .review-section__slides {
         display: flex;
         gap: 24px;
         overflow: scroll;
     }
 
-    .review-section__slider__slide {
+    .review-section__slide {
         display: flex;
         flex-direction: column;
         flex: 0 0 328px;
     }
 
-    .review-section__slider__slide-text {
+    .review-section__slide-text {
         flex-direction: column;
         gap: 24px;
     }
 
-    .review-section__slider__slide-main-text {
+    .review-section__slide-main-text {
         width: 328px;
         font-size: 32px;
     }
@@ -149,24 +149,24 @@
         width: 328px;
     }
 
-    .menu-section__block-info__title h2 {
+    .menu-section__block-title h2 {
         font-size: 32px;
     }
 
-    .menu-section__block-info__link-icon {
+    .menu-section__link-icon {
         height: 24px;
         width: 24px;
         right: -30px;
     }
 
-    .menu-section__block__list {
+    .menu-section__block-list {
         flex-direction: column;
         align-items: start;
         gap: 8px;
         padding-left: 0;
     }
 
-    .menu-section__block__list-item {
+    .menu-section__block-list-item {
         flex-direction: row;
         align-items: center;
         width: 100%;
@@ -175,19 +175,18 @@
         border-bottom: 1px solid var(--text-color);
     }
 
-    .menu-section__block__list-item-info {
+    .menu-section__block-list-info {
         flex-direction: row;
         gap: 16px;
         font-size: 14px;
     }
 
-    .menu-section__block__list-item-info span,
-    .menu-section__block__list-item h6 {
+    .menu-section__block-list-info span,
+    .menu-section__block-list-item h6 {
         font-size: 14px;
     }
 
-    .menu-section__block__hover-image {
+    .menu-section__hover-image {
         display: none;
     }
-
 }

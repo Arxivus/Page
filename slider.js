@@ -2,7 +2,7 @@ let currentSlideIndex = 1;
 let slides = []
 
 document.addEventListener('DOMContentLoaded', () => {
-    slides = document.querySelectorAll(".review-section__slider__slide")
+    slides = document.querySelectorAll(".review-section__slide")
     showSlides(currentSlideIndex, slides);
 })
 
