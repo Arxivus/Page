@@ -9,7 +9,8 @@ img {
 }
 
 .container {
-    width: 1664px;
+    max-width: 1664px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -62,8 +63,9 @@ img {
 
 .about-us-section {
     display: flex;
-    height: 547px;
-    gap: 148px;
+    flex-wrap: wrap;
+    min-height: 547px;
+    justify-content: space-between;
     margin-bottom: 149px;
 
     .section-name {
@@ -91,6 +93,7 @@ img {
     &__stat {
         display: flex;
         gap: 175px;
+        flex-wrap: wrap;
     }
 
     &__stat-block {
@@ -135,8 +138,9 @@ img {
 /* =================== review-section =================== */
 .review-section {
     display: flex;
-    height: 522px;
-    gap: 464px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 522px;
     margin-bottom: 177px;
 
     &__slider {
@@ -165,7 +169,8 @@ img {
 
     &__slide-text {
         display: flex;
-        gap: 10px;
+        flex-wrap: wrap;
+        gap: 5px;
     }
 
     &__slide-main-text {
@@ -222,6 +227,7 @@ img {
     &__block {
         position: relative;
         display: flex;
+        flex-wrap: wrap;
         gap: 288px;
         border-bottom: 1px solid #000;
         padding-bottom: 64px;

@@ -178,7 +178,8 @@ img {
 }
 
 .container {
-  width: 1664px;
+  max-width: 1664px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -224,8 +225,9 @@ img {
 /* =================== about-us-section =================== */
 .about-us-section {
   display: flex;
-  height: 547px;
-  gap: 148px;
+  flex-wrap: wrap;
+  min-height: 547px;
+  justify-content: space-between;
   margin-bottom: 149px;
 }
 .about-us-section .section-name {
@@ -249,6 +251,7 @@ img {
 .about-us-section__stat {
   display: flex;
   gap: 175px;
+  flex-wrap: wrap;
 }
 .about-us-section__stat-block {
   display: flex;
@@ -289,8 +292,9 @@ img {
 /* =================== review-section =================== */
 .review-section {
   display: flex;
-  height: 522px;
-  gap: 464px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 522px;
   margin-bottom: 177px;
 }
 .review-section__slider {
@@ -315,7 +319,8 @@ img {
 }
 .review-section__slide-text {
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 .review-section__slide-main-text {
   width: 826px;
@@ -361,6 +366,7 @@ img {
 .menu-section__block {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   gap: 288px;
   border-bottom: 1px solid #000;
   padding-bottom: 64px;
