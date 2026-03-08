@@ -1,0 +1,186 @@
+/* =================== variables =================== */
+
+$accent-color: #F43B3A;
+$additional-color: #9B9A9A;
+$additional-color-dark: #595959;
+$text-color: #141414;
+$background-color-main: #FBFBFB;
+$title-font-family: "Neutral Face", sans-serif;
+$text-font-family: "Manrope", sans-serif;
+$border-color: #9747FF;
+
+/* =================== main-styles =================== */
+
+.ui-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 200px 300px;
+  gap: 500px;
+  background-color: #CCCCCC;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  font-family: $title-font-family;
+  margin: 0;
+}
+
+h1 { font-size: 96px; }
+h2 { font-size: 80px; }
+h3 { font-size: 64px; }
+h4 { font-size: 40px; }
+h5 { font-size: 32px; }
+h6 { font-size: 24px; }
+
+
+button, a {
+  font: 400 16px $text-font-family;
+  text-decoration: underline;
+  text-decoration-color: $accent-color;
+  min-width: max-content;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+/* =================== ui-section =================== */
+
+.ui-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 300px;
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+
+  &__title,
+  &__block-name {
+    color: $additional-color-dark;
+  }
+
+  &__block-name {
+    margin-bottom: 20px;
+  }
+
+  &__colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
+  }
+
+  &__color {
+    width: 243px;
+    height: 243px;
+    border-radius: 100%;
+
+    &:first-child {
+      background-color: $background-color-main;
+    }
+
+    &:nth-child(2) {
+      background-color: $additional-color;
+    }
+
+    &:nth-child(3) {
+      background-color: $additional-color-dark;
+    }
+
+    &:nth-child(4) {
+      background-color: $text-color;
+    }
+
+    &:nth-child(5) {
+      background-color: $accent-color;
+    }
+  }
+
+  &__fonts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__menu-blocks {
+    display: flex;
+    gap: 70px;
+  }
+
+  &__slider-buttons {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  &__elements {
+    display: flex;
+    gap: 70px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+
+    &-components {
+      display: flex;
+      column-gap: 400px;
+      border: 1px dashed $border-color;
+      border-radius: 5px;
+      padding: 20px 170px;
+      background-color: $background-color-main;
+      flex-wrap: wrap;
+      row-gap: 50px;
+    }
+
+    &-states {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 170px;
+      flex-wrap: wrap;
+      row-gap: 50px;
+
+      h6 {
+        color: $additional-color-dark;
+      }
+    }
+  }
+}
+
+/* =================== text-styles =================== */
+
+.button-text,
+.normal-text {
+  font-size: 16px;
+}
+
+.mobile-text,
+.mobile-button-text {
+  font-size: 14px;
+}
+
+.mini-text {
+  font-size: 12px;
+}
+
+.disabled {
+  cursor: default;
+  color: $additional-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $additional-color;
+  }
+}
+
+.hover {
+  color: $accent-color;
+}

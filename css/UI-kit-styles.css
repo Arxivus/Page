@@ -1,0 +1,171 @@
+/* =================== variables =================== */
+/* =================== main-styles =================== */
+.ui-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 200px 300px;
+  gap: 500px;
+  background-color: #CCCCCC;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  font-family: "Neutral Face", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 64px;
+}
+
+h4 {
+  font-size: 40px;
+}
+
+h5 {
+  font-size: 32px;
+}
+
+h6 {
+  font-size: 24px;
+}
+
+button, a {
+  font: 400 16px "Manrope", sans-serif;
+  text-decoration: underline;
+  text-decoration-color: #F43B3A;
+  min-width: max-content;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+/* =================== ui-section =================== */
+.ui-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 300px;
+}
+.ui-section__block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.ui-section__title, .ui-section__block-name {
+  color: #595959;
+}
+.ui-section__block-name {
+  margin-bottom: 20px;
+}
+.ui-section__colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+}
+.ui-section__color {
+  width: 243px;
+  height: 243px;
+  border-radius: 100%;
+}
+.ui-section__color:first-child {
+  background-color: #FBFBFB;
+}
+.ui-section__color:nth-child(2) {
+  background-color: #9B9A9A;
+}
+.ui-section__color:nth-child(3) {
+  background-color: #595959;
+}
+.ui-section__color:nth-child(4) {
+  background-color: #141414;
+}
+.ui-section__color:nth-child(5) {
+  background-color: #F43B3A;
+}
+.ui-section__fonts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.ui-section__menu-blocks {
+  display: flex;
+  gap: 70px;
+}
+.ui-section__slider-buttons {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.ui-section__elements {
+  display: flex;
+  gap: 70px;
+}
+.ui-section__buttons {
+  display: flex;
+  flex-direction: column;
+}
+.ui-section__buttons-components {
+  display: flex;
+  column-gap: 400px;
+  border: 1px dashed #9747FF;
+  border-radius: 5px;
+  padding: 20px 170px;
+  background-color: #FBFBFB;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+.ui-section__buttons-states {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 170px;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+.ui-section__buttons-states h6 {
+  color: #595959;
+}
+
+/* =================== text-styles =================== */
+.button-text,
+.normal-text {
+  font-size: 16px;
+}
+
+.mobile-text,
+.mobile-button-text {
+  font-size: 14px;
+}
+
+.mini-text {
+  font-size: 12px;
+}
+
+.disabled {
+  cursor: default;
+  color: #9B9A9A;
+  text-decoration: none;
+}
+.disabled:hover {
+  color: #9B9A9A;
+}
+
+.hover {
+  color: #F43B3A;
+}
+
+/*# sourceMappingURL=UI-kit-styles.css.map */
