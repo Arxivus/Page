@@ -1,34 +1,3 @@
-
-:root {
-    --accent-color: rgba(244, 59, 58, 1);
-    --additional-color: rgba(155, 154, 154, 1);
-    --title-font-family: "Neutral Face", sans-serif;
-    --text-font-family: "Manrope", sans-serif;
-    --text-color: rgba(20, 20, 20, 1);
-}
-
-body {
-    color: var(--text-color);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-    font-family: var(--title-font-family);
-    margin: 0;
-}
-
-button, a {
-    cursor: pointer;
-}
-
-p {
-    margin: 0;
-}
-
-h1 {
-    font-size: 96px;
-}
-
 header {
     margin-bottom: 40px;
 }
@@ -50,7 +19,7 @@ img {
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: var(--text-color);
 }
 
 .section-name {
@@ -179,12 +148,6 @@ img {
     margin-bottom: 48px;
 }
 
-.review-section__slider-buttons button {
-    background-color: inherit;
-    border: none;
-    padding: 0;
-}
-
 .review-section__slides {
     font: 400 64px var(--title-font-family);
 }
@@ -197,6 +160,7 @@ img {
 .review-section__slide {
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap: 32px;
 }
 
@@ -230,9 +194,6 @@ img {
 } 
 
 .review-section__slider-link {
-    font: 400 16px var(--text-font-family);
-    text-decoration: underline;
-    text-decoration-color: var(--accent-color);
     transition: color .3s ease;
 } 
 
@@ -328,6 +289,6 @@ img {
 
 .menu-section__block-list-info span {
     font: 400 16px var(--text-font-family);
-    color: rgba(89, 89, 89, 1);
+    color: var(--additional-color-dark);
 }
 
