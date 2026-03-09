@@ -227,7 +227,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   min-height: 547px;
-  justify-content: space-between;
+  gap: 148px;
   margin-bottom: 149px;
 }
 .about-us-section .section-name {
@@ -504,6 +504,7 @@ img {
     flex-direction: column;
     gap: 48px;
     margin-bottom: 82px;
+    overflow: scroll;
   }
   .review-section__slides {
     display: flex;
