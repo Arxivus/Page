@@ -132,7 +132,7 @@ img {
 
 .about-us-number-animation4 {
     transition: padding-top 0.5s ease-in;
-    padding-top: 419px;
+    padding-top: 408px;
 }
 
 /* =================== review-section =================== */
@@ -140,14 +140,13 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-height: 522px;
+    min-height: 582px;
     margin-bottom: 177px;
 
     &__slider {
         position: relative;
         display: flex;
         flex-direction: column;
-        gap: 10px;
     }
 
     &__slider-buttons {
