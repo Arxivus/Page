@@ -296,6 +296,7 @@ img {
   justify-content: space-between;
   min-height: 522px;
   margin-bottom: 177px;
+  overflow: scroll;
 }
 .review-section__slider {
   position: relative;
